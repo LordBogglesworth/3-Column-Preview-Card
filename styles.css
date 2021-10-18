@@ -1,0 +1,62 @@
+ * {
+  box-sizing: border-box;
+}
+
+body {
+  color: white;
+  background-color: grey;
+}
+
+h1 {
+  font-family: 'Big Shoulders Display', cursive;
+}
+
+p, button {
+  font-family: 'Lexend Deca', sans-serif;
+}
+
+p {
+  margin-bottom: 10%;
+  /* text-justify: inter-character; */
+}
+
+button {
+  margin: 30% 20% 5% auto;
+}
+
+.main_container {
+  display: flex;
+  width: 80%;
+  height: 70%;
+  margin: 10% auto auto;
+  text-align: justify;
+  text-justify: distribute;
+  text-align-last: left;
+  align-items: left;
+}
+
+.main_container > div {
+  padding: 50px;
+}
+
+.sedans {
+  background-color: hsl(31, 77%, 52%);
+}
+
+.suvs {
+  background-color: hsl(184, 100%, 22%);
+}
+
+.luxury {
+  background-color: hsl(179, 100%, 13%);
+}
+
+/* Footer */
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
