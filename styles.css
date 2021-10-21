@@ -1,23 +1,23 @@
+:root {
+  --main-color: hotpink;
+  --pane-padding: 5px 42px;
+}
+
 * {
   box-sizing: border-box;
 }
 
 body {
-  color: white;
-  background-color: grey;
+  color: var(--main-color) !important;
 }
 
 h1 {
   font-family: "Big Shoulders Display", cursive;
 }
 
-p,
-button {
-  font-family: "Lexend Deca", sans-serif;
-}
-
 p {
-  margin-bottom: 10%;
+  color: hsla(0, 0%, 100%, 0.75);
+  font-weight: 400;
   /* text-justify: inter-character; */
 }
 
@@ -25,13 +25,18 @@ button {
   margin: 30% 20% 5% auto;
 }
 
+p,
+button {
+  font-family: "Lexend Deca", sans-serif;
+}
+
 .main_container {
   display: flex;
-  width: 80%;
-  height: 70%;
+  width: 70%;
+  height: 80%;
   margin: 10% auto auto;
-  text-align: justify;
-  text-justify: distribute;
+  /* text-align: justify; */
+  /* /* text-justify: distribute; */
   text-align-last: left;
   align-items: left;
 }
@@ -40,8 +45,22 @@ button {
   padding: 50px;
 }
 
+.icon {
+  margin-bottom: 30px;
+}
+
+.heading {
+  margin-bottom: 30px;
+}
+
+.paragraph {
+  display: block;
+}
+
 .sedans {
   background-color: hsl(31, 77%, 52%);
+  border-top-left-radius: 10px;
+  border-bottom--radius: 10px;
 }
 
 .suvs {
@@ -50,6 +69,34 @@ button {
 
 .luxury {
   background-color: hsl(179, 100%, 13%);
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.btn-light {
+  color: black !important;
+  background-color: hsl(0, 0%, 95%) !important;
+  padding: 12px 34px !important;
+  border-radius: 30px !important;
+  font-weight: 500 !important;
+  /* font-size: 15px !important; */
+}
+
+.learn_more {
+  margin-top: 40%;
+  display: block;
+}
+
+.sedans .btn-light {
+  color: hsl(31, 77%, 52%) !important;
+}
+
+.suvs .btn-light {
+  color: hsl(184, 100%, 22%) !important;
+}
+
+.luxury .btn-light {
+  color: hsl(184, 100%, 22%) !important;
 }
 
 /* Footer */
@@ -61,3 +108,13 @@ button {
 .attribution a {
   color: hsl(228, 45%, 44%);
 }
+
+@media all and (max-width: 909px) {
+  .main_container {
+    display: inline;
+    width: 35%;
+    height: 40%;
+  }
+}
+
+/* @700px remove display: flex */
